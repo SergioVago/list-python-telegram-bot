@@ -213,7 +213,6 @@ def main():
     if(os.environ.get('ENV') == "DEV"):
         updater.start_polling()
 
-        updater.idle()
     else:
         updater.start_webhook(listen = "0.0.0.0",
                                 port = int(PORT),
@@ -222,6 +221,7 @@ def main():
         updater.bot.setWebhook(
             'https://list-python-telegram-bot.herokuapp.com/' + TOKEN)
 
+    updater.idle()
 
 if __name__ == "__main__":
     main()
