@@ -13,7 +13,7 @@ NAME_LIST, JOIN_LIST, CHANGE_NAME = range(3)
 isOpen = False
 nomeLista = ""
 
-adminList = [675141232]
+adminList = [675141232, 1071434369]
 
 
 def ehAdmin(user):
