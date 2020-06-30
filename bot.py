@@ -28,7 +28,7 @@ def start(update, context):
     user = update.message.from_user
 
     if(ehAdmin(user)):
-        message = "Digite /cancel para cancelar \n Defina o nome da lista: \n"
+        message = "Digite /cancel para cancelar \nDefina o nome da lista: \n"
 
         if(isOpen):
             message = "Lista: " + nomeLista + " aberta. Digite um novo nome para apagar essa lista e criar uma nova ou /cancel para cancelar"
